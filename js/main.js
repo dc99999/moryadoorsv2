@@ -2,7 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".main-nav");
   const languageToggle = document.querySelector(".language-toggle");
+  const backButton = document.querySelector(".back-button");
   const originalText = new WeakMap();
+
+  backButton?.addEventListener("click", () => {
+    if (window.history.length > 1) {
+      window.history.back();
+      return;
+    }
+
+    window.location.href = backButton.dataset.fallback;
+  });
 
   const marathi = {
     Home: "मुखपृष्ठ",
