@@ -1095,6 +1095,51 @@ main .product-card img[src*="-door-"] {
 }
 
 @media (max-width: 480px) {
+  .nav-wrap.has-back-button {
+    min-height: 68px;
+    gap: 8px;
+    justify-content: flex-start;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .nav-wrap.has-back-button .back-button {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+  }
+
+  .nav-wrap.has-back-button .brand {
+    flex: 0 1 auto;
+    min-width: 0;
+    gap: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .nav-wrap.has-back-button .brand-logo {
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .nav-wrap.has-back-button .brand small {
+    display: none;
+  }
+
+  .nav-wrap.has-back-button .menu-toggle {
+    flex: 0 0 auto;
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .nav-wrap.has-back-button .language-toggle {
+    margin-left: auto;
+    padding: 6px 7px;
+    font-size: 10px;
+  }
+
   main .hero h1 {
     font-size: 43px;
   }
